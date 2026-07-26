@@ -1299,8 +1299,11 @@ else()
   set(OPENCV_COMPILER_STR "${CMAKE_CXX_COMPILER} ${CMAKE_CXX_COMPILER_ARG1}")
 endif()
 string(STRIP "${OPENCV_COMPILER_STR}" OPENCV_COMPILER_STR)
+
+# ======= Added for SuperGoggs - caolanod
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+#========
 status("")
 status("  C/C++:")
 status("    Built as dynamic libs?:" BUILD_SHARED_LIBS THEN YES ELSE NO)
